@@ -72,6 +72,7 @@ h2 {
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
+    width: 70px;
 }
 
 header img {
