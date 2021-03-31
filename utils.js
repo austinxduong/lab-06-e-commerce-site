@@ -19,6 +19,7 @@ export function createMusicVibezli(musicvibez) {
     pAutograph.textContent = musicvibez.hasAutograph ? 'Autographed Album' : 'This is the final form';
 
     const image = document.createElement('img');
+    image.classList.add('image');
 
     image.src = musicvibez.image;
 
