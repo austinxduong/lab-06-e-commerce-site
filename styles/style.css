@@ -77,7 +77,7 @@ h2 {
 
 .products-logo {
     animation: pulse 5s infinite ease-in-out;
-    width: 40px;
+    width: 50px;
 }
 
 header img {
@@ -122,5 +122,6 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-}
+
+
+
