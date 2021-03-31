@@ -80,7 +80,27 @@ header img {
 }
 
 p {
-    margin: var(--gutter);
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.musicvibez {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.name {
+    font-weight: 900;
+    font-size: 2rem;
 }
   
 footer {
