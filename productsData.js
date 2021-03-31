@@ -1,35 +1,35 @@
 export const musicvibez = [
     { 
         name: 'Dua Lipa',
-        genre: 'pop',
+        genre: 'Pop',
         hasAutograph: 'true',
         image: '../assets/Dua.png',
         price: 7
     },
     {
         name: 'Brockhampton',
-        genre: 'hiphop',
+        genre: 'Hip-hop',
         hasAutograph: 'true',
         image: '../assets/brockhampton.jpeg',
         price: 6
     },
     {
         name: 'Kings of Leon',
-        genre: 'rock',
+        genre: 'Rock',
         hasAutograph: 'true',
         image: '../assets/kingsofleon.jpeg',
         price: 5
     },
     {
         name: 'Thomas Rhett',
-        genre: 'country',
+        genre: 'Country',
         hasAutograph: 'true',
         image: '../assets/thomas.jpeg',
         price: 4
     },
     {
         name: 'Artic Monkeys',
-        genre: 'indie',
+        genre: 'Indie',
         hasAutograph: 'true',
         image: '../assets/artic.jpeg',
         price: 3

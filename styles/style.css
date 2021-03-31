@@ -72,7 +72,12 @@ h2 {
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
-    width: 70px;
+    width: 70px ;
+}
+
+.products-logo {
+    animation: pulse 5s infinite ease-in-out;
+    width: 40px;
 }
 
 header img {
@@ -102,6 +107,10 @@ ul {
     font-weight: 900;
     font-size: 2rem;
 }
+
+.type {
+    font-style: italic;
+}
   
 footer {
     position: fixed;
@@ -114,21 +123,4 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
+}
