@@ -30,7 +30,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-color: var(--orange);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -76,7 +76,7 @@ h2 {
 
 .image {
     width: auto;
-    height: 50px;
+    height: 140px;
 }
 
 .products-logo {
@@ -108,13 +108,21 @@ ul {
 }
 
 .name {
-    font-weight: 900;
+    font-family: didot;
+    font-weight: 200;
     font-size: 2rem;
 }
 
 .genre {
+    font-family: signa pro;
     font-style: italic;
-    font-weight: 200
+    font-weight: 100;
+    
+}
+
+.autograph {
+    font-family: "didot"
+    
 }
 
   
@@ -128,6 +136,9 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+
+
 
 
 

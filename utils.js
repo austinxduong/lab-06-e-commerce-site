@@ -10,11 +10,13 @@ export function createMusicVibezli(musicvibez) {
     pName.textContent = musicvibez.name;
 
     const pGenre = document.createElement('p');
+    pGenre.classList.add('genre');
 
     pGenre.classList.add('Genre');
     pGenre.textContent = musicvibez.genre;
 
     const pAutograph = document.createElement('p');
+    pAutograph.classList.add('autograph');
 
     pAutograph.textContent = musicvibez.hasAutograph ? 'Autographed Album' : 'This is the final form';
 
