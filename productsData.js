@@ -1,5 +1,6 @@
 export const musicvibez = [
     { 
+        id: 1,
         name: 'Dua Lipa',
         genre: 'Pop',
         hasAutograph: 'true',
@@ -7,7 +8,8 @@ export const musicvibez = [
         image: '../assets/Dua.png',
         price: 7
     },
-    {
+    {   
+        id: 2,
         name: 'Brockhampton',
         genre: 'Hip-hop',
         hasAutograph: 'true',
@@ -16,6 +18,7 @@ export const musicvibez = [
         price: 6
     },
     {
+        id: 3,
         name: 'Kings of Leon',
         genre: 'Rock',
         hasAutograph: 'true',
@@ -24,6 +27,7 @@ export const musicvibez = [
         price: 5
     },
     {
+        id: 4,
         name: 'Thomas Rhett',
         genre: 'Country',
         hasAutograph: 'true',
@@ -32,13 +36,14 @@ export const musicvibez = [
         price: 4
     },
     {
+        id: 5,
         name: 'Artic Monkeys',
         genre: 'Indie',
         hasAutograph: 'true',
         color: '#E3BC9A',
         image: '../assets/artic.jpeg',
         price: 3
-    }
+    },
 
 
 
