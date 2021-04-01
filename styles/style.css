@@ -137,6 +137,14 @@ footer {
     box-shadow: var(--shadow);
 }
 
+@media (max-width: 768px)
+    {
+        body {
+            background-color: black;
+        }
+
+    }
+
 
 
 
