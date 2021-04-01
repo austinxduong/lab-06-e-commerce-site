@@ -137,13 +137,39 @@ footer {
     box-shadow: var(--shadow);
 }
 
-@media (max-width: 768px)
-    {
-        body {
-            background-color: black;
-        }
-
+@keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  }
+
+table {
+    width: 100%;
+    border: solid 1px black;
+}
+
+td {
+    border: dotted 1px black
+}
+
+thead {
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
 
 
 
