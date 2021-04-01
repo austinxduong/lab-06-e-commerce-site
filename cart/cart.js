@@ -1,11 +1,20 @@
-import { musicvibez} from '../products.js';
+import { musicvibez } from '../products.js';
+import { createTotalRow } from '../utils.js';
 import { cart } from './cart-data';
-import { createTableRow } from '/..utils.js';
+import { createTableRow, createTotalRow, findById } from '/..utils.js';
+
+const table = document.querySelector('table');
 
 for (let cartItem of cart) {
 
-    const tr = createTableRow(cartItem, matchMusic);
+    const matchingMusic = findById(musicvibez, cartItem.id);
+
+    const tr = createTableRow(cartItem, matchingMusic);
 
     table.append(tr);
 
 }
+
+const totalRow = createTotalRow(cart, musicvibez);
+
+table.append(totalRow);
