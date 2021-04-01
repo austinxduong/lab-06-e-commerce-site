@@ -1,3 +1,12 @@
+export function findById(someArray, someId) {
+    for (let item of someArray) {
+        if (item.id === someId) {
+            return item;
+        }
+    }
+}
+
+
 export function createMusicVibezli(musicvibez) {
     const li = document.createElement('li');
 
@@ -41,5 +50,60 @@ export function createMusicVibezli(musicvibez) {
 
     return li;
     
+
+}
+
+export function createTableRow(cartItem, musicPick) {
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    const tdQuantity = document.createElement('td');
+    const tdPrice = document.createElement('td');
+
+    tdName.textContent = musicPick.name;
+    tdQuantity.textContent = cartItem.quantity;
+    const total = musicPick.price * cartItem.quantity;
+
+    const config = {
+        currency: 'USD',
+        style: 'currency'
+    };
+
+    const totalAsUSD = total.toLocaleString('en-US', config);
+
+    tdPrice.textContent = totalAsUSD;
+
+    tr.append(tdName, tdQuantity, tdPrice);
+
+    return tr;
+
+}
+
+export function createTotalRow(cartArray, musicArray) {
+    let sum = 0;
+
+    for (let cartItem of cartArray) {
+
+        const matchingMusic = findById(musicArray, cartItem.id);
+        
+        const lineItem = matchingMusic.price * cartItem.quantity;
+
+        sum = sum + lineItem;
+
+        const tr = document.createElement('tr');
+
+        const td1 = document.createElement('td');
+        const td2 = document.createElement('td');
+        const td3 = document.createElement('td');
+
+        td3.textContent = `$${sum}.00`;
+
+        tr.append(td1, td2, td3);
+        
+        return tr;
+
+    }
+
+
+
 
 }
