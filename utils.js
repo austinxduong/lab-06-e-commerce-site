@@ -1,3 +1,5 @@
+import { musicvibez } from './productsData.js'
+
 export function findById(someArray, someId) {
     for (let item of someArray) {
         if (item.id === someId) {
@@ -8,6 +10,18 @@ export function findById(someArray, someId) {
 
 export function calcItemTotal(price, quantity) {
     return price * quantity;
+
+}
+
+export function calcOrderTotal(cart) {
+    let counter = 0;
+
+    for (let item of cart) {
+        const itemPrice = findById(musicvibez, item.id).price;
+        const musicTotal = calcItemTotal(itemPrice, item.quantity);
+        counter += musicTotal;
+    }
+    return counter;
 }
 
 
