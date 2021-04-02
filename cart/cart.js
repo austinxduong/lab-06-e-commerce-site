@@ -1,5 +1,4 @@
 import { musicvibez } from '../productsData.js';
-import { createTotalRow } from '../utils.js';
 import { cart } from './cart-data';
 import { createTableRow, createTotalRow, findById } from '/..utils.js';
 

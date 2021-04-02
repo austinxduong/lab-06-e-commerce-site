@@ -6,6 +6,10 @@ export function findById(someArray, someId) {
     }
 }
 
+export function calcItemTotal(price, quantity) {
+    return price * quantity;
+}
+
 
 export function createMusicVibezli(musicvibez) {
     const li = document.createElement('li');
