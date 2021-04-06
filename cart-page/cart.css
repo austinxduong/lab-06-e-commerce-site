@@ -5,7 +5,7 @@ table, .order-now-container {
 }
 
 .order-now-container {
-    text-align: right;
+    text-align: left;
 }
 
 #place-order-button {
