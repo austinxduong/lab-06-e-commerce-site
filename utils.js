@@ -1,4 +1,7 @@
-import { musicvibez } from './productsData.js'
+import { musicvibez } from './productsData.js';
+import { addItemToCart } from './addItemToCart.js';
+import { cart } from './cart-page/cart-data.js';
+
 
 export function findById(someArray, someId) {
     for (let item of someArray) {
@@ -62,7 +65,12 @@ export function createMusicVibezli(musicvibez) {
     const button = document.createElement('button');
 
     button.textContent = 'Secure the bag';
+    button.value = musicvibez.id;
+    button.addEventListener('click', () => {
+        addItemToCart(musicvibez.id);
 
+    console.log(button.value);
+    });
 
     li.append(pName, pGenre, pAutograph, image, pPrice, button);
 
@@ -71,30 +79,36 @@ export function createMusicVibezli(musicvibez) {
 
 }
 
-export function createTableRow(cartItem, musicPick) {
-    const tr = document.createElement('tr');
-    const tdName = document.createElement('td');
-    const tdQuantity = document.createElement('td');
-    const tdPrice = document.createElement('td');
+// export function createTableRow(cartItem, musicvibez) {
+//     const tr = document.createElement('tr');
+//     const tdName = document.createElement('td');
+//     const tdQuantity = document.createElement('td');
+//     const tdPrice = document.createElement('td');
+// //create submit button
+// //add advent listner to submit button
 
-    tdName.textContent = musicPick.name;
-    tdQuantity.textContent = cartItem.quantity;
-    const total = musicPick.price * cartItem.quantity;
+// console.log(musicvibez);
 
-    const config = {
-        currency: 'USD',
-        style: 'currency'
-    };
 
-    const totalAsUSD = total.toLocaleString('en-US', config);
 
-    tdPrice.textContent = totalAsUSD;
+//     tdName.textContent = musicvibez.name;
+//     tdQuantity.textContent = cartItem.quantity;
+//     const total = musicvibez.price * cartItem.quantity;
 
-    tr.append(tdName, tdQuantity, tdPrice);
+//     const config = {
+//         currency: 'USD',
+//         style: 'currency'
+//     };
 
-    return tr;
+//     const totalAsUSD = total.toLocaleString('en-US', config);
 
-}
+//     tdPrice.textContent = totalAsUSD;
+
+//     tr.append(tdName, tdQuantity, tdPrice);
+
+//     return tr;
+
+// }
 
 export function createTotalRow(cartArray, musicArray) {
     let sum = 0;
