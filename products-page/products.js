@@ -3,7 +3,7 @@ import { createMusicVibezli } from '../utils.js';
 
 
 
-const ul = document.querySelector('.vibez-list');
+const ul = document.querySelector('#vibez-list');
 
 for (let vibez of musicvibez) {
 

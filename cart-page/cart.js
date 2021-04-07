@@ -1,4 +1,4 @@
-import { getCart } from '../getcart.js';
+import { getCart } from '../getCart.js';
 import { musicvibez } from '../productsData.js';
 //import { cart } from './cart-data.js';
 import { createTotalRow, findById } from '../utils.js';
