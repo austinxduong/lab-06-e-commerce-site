@@ -69,7 +69,7 @@ export function createMusicVibezli(musicvibez) {
     button.addEventListener('click', () => {
         addItemToCart(musicvibez.id);
 
-    console.log(button.value);
+
     });
 
     li.append(pName, pGenre, pAutograph, image, pPrice, button);
