@@ -9,32 +9,32 @@
 7) Think about how to validate each of your steps
 
 
-Data Modeling Plan (product idea):
+## Data Modeling Plan (product idea):
 
 Main Goal. Just create a Products page. 
 
-1. Create a Product Line:
+## 1. Create a Product Line:
     - Music Albums (based on genre)
     - pop, hiphop, rock, country, indie, 
     - each album (genre) needs unique ID
     - ie (id= pop, id = hiphop, id = rock, etc.)
 
-2. needs user-friendly name of product (5ea):
+## 2. needs user-friendly name of product (5ea):
     - pop, rap, rock, country, indie
 
-3. needs images of each album genre (5ea):
+## 3. needs images of each album genre (5ea):
     - google
     - put it in assets folder
     - copy and paste the relative path once in asset folder
 
-4. needs description of product (albumb genre) (5ea):
+## 4. needs description of product (albumb genre) (5ea):
     - just describe the vibes of each album in index.html
 
-5. needs category of each product (5ea):
+## 5. needs category of each product (5ea):
     - pop, rap, rock, country, indie
 
-6. needs price for each product (5ea):
+## 6. needs price for each product (5ea):
 
-7. Needs button for each product (5ea):
+## 7. Needs button for each product (5ea):
     -button ID
 
